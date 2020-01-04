@@ -37,7 +37,7 @@
     <hotspots wordwrap="1" width="180" height="20">
       <label background="1" wordwrap="1" enabled="0" backgroundalpha="1" textcolor="0x000000" width="180" borderradius="1" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" height="20" borderalpha="1" textalpha="1"/>
       <polystyle backgroundalpha="0.25098" handcursor="1" backgroundcolor="0xff0648" bordercolor="0xff0004" borderalpha="1" mode="1"/>
-      <hotspot url="{node1}" tilt="3.17" pan="-88.95" description="" id="Point01" title="" skinid="Hotspot 1" target="-175.6/5.7/70.0"/>
+      <hotspot url="{node1}" tilt="11.23" pan="-88.31" description="" id="Point01" title="" skinid="Hotspot 1" target="-175.6/5.7/70.0"/>
     </hotspots>
     <media/>
     <transition zoomfov="20" enabled="1" zoomout="0" zoomoutpause="1" softedge="0" type="diptocolor" blendtime="1" zoomin="0" blendcolor="0x000000" zoomspeed="2"/>
