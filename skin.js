@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.0.6/17336
 // Filename: button1.ggsk
-// Generated 2020-01-06T13:52:06
+// Generated 2020-01-06T14:04:29
 
 function pano2vrSkin(player,base) {
 	var me=this;
