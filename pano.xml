@@ -96,7 +96,7 @@
       <hotspot id="Point05" description="" target="0.0/0.0/100.0" pan="-226.16" title="$(ut)" tilt="-21.15" url="images/photo (32).jpg" skinid="Hotspot 9"/>
       <hotspot id="Point06" description="" target="0.0/0.0/100.0" pan="-156.86" title="$(ut)" tilt="-27.89" url="images/photo (28).jpg" skinid="Hotspot 9"/>
       <hotspot id="Point07" description="" target="-13.9/0.0/100.0" pan="-236.13" title="$(ut)" tilt="-17.84" url="images/photo (20).jpg" skinid="Hotspot 9"/>
-      <hotspot id="Point08" description="" target="0.0/0.0/100.0" pan="-287.36" title="$(ut)" tilt="-6.44" url="images/photo (26).jpg" skinid="Hotspot 9"/>
+      <hotspot id="Point08" description="" target="0.0/0.0/100.0" pan="-287.4" title="$(ut)" tilt="-3.96" url="images/photo (26).jpg" skinid="Hotspot 9"/>
       <hotspot id="Point09" description="" target="0.0/0.0/100.0" pan="-287.55" title="$(ut)" tilt="-10.63" url="images/photo (25).jpg" skinid="Hotspot 9"/>
       <hotspot id="Point10" description="" target="_blank" pan="-281.06" title="" tilt="-14.2" url="https://www.baidu.com/" skinid="Hotspot 10"/>
     </hotspots>
