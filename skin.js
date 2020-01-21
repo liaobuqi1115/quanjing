@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.0.6/17336
 // Filename: button1.ggsk
-// Generated 2020-01-21T15:31:50
+// Generated 2020-01-21T15:47:47
 
 function pano2vrSkin(player,base) {
 	var me=this;
@@ -114,6 +114,59 @@ function pano2vrSkin(player,base) {
 	this.addSkin=function() {
 		var hs='';
 		this.ggCurrentTime=new Date().getTime();
+		el=me._external_1=document.createElement('div');
+		me._external_1__img=document.createElement('img');
+		me._external_1__img.className='ggskin ggskin_external';
+		me._external_1__img.onload=function() {me._external_1.ggUpdatePosition();}
+		me._external_1.ggText=basePath + '';
+		me._external_1__img.setAttribute('src', me._external_1.ggText);
+		me._external_1__img['ondragstart']=function() { return false; };
+		hs ='';
+		me._external_1.appendChild(me._external_1__img);
+		me._external_1.ggSubElement = me._external_1__img;
+		el.ggId="External 1";
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		el.ggVisible=false;
+		el.className="ggskin ggskin_external ";
+		el.ggType='external';
+		hs ='';
+		hs+='border : 0px solid #000000;';
+		hs+='cursor : default;';
+		hs+='height : 100%;';
+		hs+='left : -0.01%;';
+		hs+='position : absolute;';
+		hs+='top : 0%;';
+		hs+='visibility : hidden;';
+		hs+='width : 100%;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style[domTransform + 'Origin']='50% 50%';
+		me._external_1.ggIsActive=function() {
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			return player.getCurrentNode();
+		}
+		me._external_1.ggUpdatePosition=function (useTransition) {
+			var parentWidth = me._external_1.clientWidth;
+			var parentHeight = me._external_1.clientHeight;
+			var aspectRatioDiv = me._external_1.clientWidth / me._external_1.clientHeight;
+			var aspectRatioImg = me._external_1__img.naturalWidth / me._external_1__img.naturalHeight;
+			if (me._external_1__img.naturalWidth < parentWidth) parentWidth = me._external_1__img.naturalWidth;
+			if (me._external_1__img.naturalHeight < parentHeight) parentHeight = me._external_1__img.naturalHeight;
+			var currentWidth = me._external_1__img.naturalWidth;
+			var currentHeight = me._external_1__img.naturalHeight;
+			if (aspectRatioDiv > aspectRatioImg) {
+			currentHeight = parentHeight;
+			currentWidth = parentHeight * aspectRatioImg;
+			me._external_1__img.setAttribute('style','position: absolute; left: 50%; margin-left: -' + currentWidth/2 + 'px; top: 50%; margin-top: -' + currentHeight/2 + 'px;height:' + parentHeight + 'px;-webkit-user-drag:none;pointer-events:none;border-radius:0px;;');
+			} else {
+			currentWidth = parentWidth;
+			currentHeight = parentWidth / aspectRatioImg;
+			me._external_1__img.setAttribute('style','position: absolute; left: 50%; margin-left: -' + currentWidth/2 + 'px; top: 50%; margin-top: -' + currentHeight/2 + 'px;width:' + parentWidth + 'px;-webkit-user-drag:none;pointer-events:none;border-radius:0px;;');
+			};
+		}
+		me.divSkin.appendChild(me._external_1);
 		el=me._rectangle_1=document.createElement('div');
 		el.ggId="Rectangle 1";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
@@ -225,59 +278,6 @@ function pano2vrSkin(player,base) {
 		me._button_1.ggUpdatePosition=function (useTransition) {
 		}
 		me.divSkin.appendChild(me._button_1);
-		el=me._external_1=document.createElement('div');
-		me._external_1__img=document.createElement('img');
-		me._external_1__img.className='ggskin ggskin_external';
-		me._external_1__img.onload=function() {me._external_1.ggUpdatePosition();}
-		me._external_1.ggText=basePath + '';
-		me._external_1__img.setAttribute('src', me._external_1.ggText);
-		me._external_1__img['ondragstart']=function() { return false; };
-		hs ='';
-		me._external_1.appendChild(me._external_1__img);
-		me._external_1.ggSubElement = me._external_1__img;
-		el.ggId="External 1";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		el.ggVisible=false;
-		el.className="ggskin ggskin_external ";
-		el.ggType='external';
-		hs ='';
-		hs+='border : 0px solid #000000;';
-		hs+='cursor : default;';
-		hs+='height : 80%;';
-		hs+='left : 10%;';
-		hs+='position : absolute;';
-		hs+='top : 10%;';
-		hs+='visibility : hidden;';
-		hs+='width : 80%;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style[domTransform + 'Origin']='50% 50%';
-		me._external_1.ggIsActive=function() {
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			return player.getCurrentNode();
-		}
-		me._external_1.ggUpdatePosition=function (useTransition) {
-			var parentWidth = me._external_1.clientWidth;
-			var parentHeight = me._external_1.clientHeight;
-			var aspectRatioDiv = me._external_1.clientWidth / me._external_1.clientHeight;
-			var aspectRatioImg = me._external_1__img.naturalWidth / me._external_1__img.naturalHeight;
-			if (me._external_1__img.naturalWidth < parentWidth) parentWidth = me._external_1__img.naturalWidth;
-			if (me._external_1__img.naturalHeight < parentHeight) parentHeight = me._external_1__img.naturalHeight;
-			var currentWidth = me._external_1__img.naturalWidth;
-			var currentHeight = me._external_1__img.naturalHeight;
-			if (aspectRatioDiv > aspectRatioImg) {
-			currentHeight = parentHeight;
-			currentWidth = parentHeight * aspectRatioImg;
-			me._external_1__img.setAttribute('style','position: absolute; left: 50%; margin-left: -' + currentWidth/2 + 'px; top: 50%; margin-top: -' + currentHeight/2 + 'px;height:' + parentHeight + 'px;-webkit-user-drag:none;pointer-events:none;border-radius:0px;;');
-			} else {
-			currentWidth = parentWidth;
-			currentHeight = parentWidth / aspectRatioImg;
-			me._external_1__img.setAttribute('style','position: absolute; left: 50%; margin-left: -' + currentWidth/2 + 'px; top: 50%; margin-top: -' + currentHeight/2 + 'px;width:' + parentWidth + 'px;-webkit-user-drag:none;pointer-events:none;border-radius:0px;;');
-			};
-		}
-		me.divSkin.appendChild(me._external_1);
 		player.addListener('sizechanged', function() {
 			me.updateSize(me.divSkin);
 		});
