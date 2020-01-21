@@ -73,7 +73,7 @@
       <hotspot title="$(ut)" url="images/photo (16).jpg" target="4.5/0.9/70.0" pan="-97.7" id="Point01" skinid="Hotspot 9" tilt="-16.86" description=""/>
       <hotspot title="$(ut)" url="images/photo (10).jpg" target="-0.3/0.3/70.0" pan="-261.17" id="Point03" skinid="Hotspot 9" tilt="-36.78" description=""/>
       <hotspot title="" url="{node1}" target="-161.7/-8.5/54.9" pan="-52.63" id="Point05" skinid="Hotspot 4" tilt="-54.75" description=""/>
-      <hotspot title="" url="" target="" pan="-199.47" id="Point06" skinid="Hotspot 9" tilt="-5.98" description=""/>
+      <hotspot title="" url="images/forsee.jpg" target="" pan="-199.47" id="Point06" skinid="Hotspot 9" tilt="-5.98" description=""/>
     </hotspots>
     <media/>
     <transition type="crossdissolve" zoomfov="20" zoomout="0" zoomin="0" zoomoutpause="1" blendcolor="0x000000" zoomspeed="2" softedge="0" blendtime="1" enabled="1"/>
